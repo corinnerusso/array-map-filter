@@ -6,23 +6,30 @@ pour chaque chaîne CHAINE de longueur N en entrée, la chaîne "CHAINE contains
 en sortie.
 
 Exemple d'entrée:
-  [
+  
     'Chicken',
     'Bacon',
     'Tofu',
     'Mayonnaise'
-  ]
-En sortie: [
+  
+En sortie: 
   'Chicken contains 7 characters',
   'Bacon contains 5 characters',
   'Tofu contains 4 characters',
   'Mayonnaise contains 10 characters'
-]
+
 
  */
 
 function getStringsLength(strings) {
+  const arrayNewAnimals = strings.map(str => 
+    `${str} contains ${str.length} characters`
+  )
+
+  return arrayNewAnimals;
 }
+
+
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node map/ex1
@@ -30,3 +37,4 @@ function getStringsLength(strings) {
 
 // Ne pas modifier l'export
 module.exports = getStringsLength;
+
