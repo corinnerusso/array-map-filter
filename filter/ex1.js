@@ -11,7 +11,9 @@ Sortie attendue:
 
  */
 
-function getPositiveNumbers(numbers) {
+function getPositiveNumbers(number) {
+  const validNumbers = number.filter(num=> num >=0);
+  return validNumbers;
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

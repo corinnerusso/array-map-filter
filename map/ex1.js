@@ -23,8 +23,7 @@ En sortie:
 
 function getStringsLength(strings) {
   const arrayNewAnimals = strings.map(str => 
-    `${str} contains ${str.length} characters`
-  )
+    `${str} contains ${str.length} characters`)
 
   return arrayNewAnimals;
 }
