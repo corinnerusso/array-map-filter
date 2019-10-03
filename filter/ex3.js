@@ -29,6 +29,7 @@ Sortie attendue:
  */
 
 function filterOnPrice(products, maxPrice) {
+  const isGoodPrice = 
 }
 
 // Ne pas modifier l'export
