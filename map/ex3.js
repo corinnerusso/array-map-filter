@@ -60,7 +60,6 @@ En sortie:
  */
 
 function getMoviesFreshness(movies) {
-<<<<<<< HEAD
   const withLabel = movies.map(str=>{
     if(str.rating <60){
       str.label = "rotten";
@@ -73,20 +72,6 @@ function getMoviesFreshness(movies) {
   }
     )
   return withLabel
-=======
-    const withLabel = movies.map(str =>{
-      if (str.rating<60){
-        str.label = "rotten";
-      } else if (str.rating >= 60 && str.rating<=75 ){
-        str.label = "fresh";
-      } else {
-        str.label = "certified fresh";
-      }
-      return str;
-    })
-    return withLabel;
-
->>>>>>> filterEx3
 }
 
 

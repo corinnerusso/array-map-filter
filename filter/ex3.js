@@ -34,7 +34,7 @@ function filterOnPrice(products, maxPrice) {
     };
     return priceIsgood
   });
-
+}
 
 
 // Ne pas modifier l'export
