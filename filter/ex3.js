@@ -28,13 +28,13 @@ Sortie attendue:
   ]
  */
 function filterOnPrice(products, maxPrice) {
-  const priceIsgood = maxPrice.filter(price =>{
-    if(maxPrice<=500){
+  const priceIsgood = products.filter(str => {
+    if (str.price <= maxPrice) {
       return products
     };
-    return priceIsgood
   });
-}
+  return priceIsgood
+};
 
 
 // Ne pas modifier l'export
