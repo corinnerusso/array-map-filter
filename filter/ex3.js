@@ -27,7 +27,6 @@ Sortie attendue:
     { name: 'Huawei P20', price: 480 }
   ]
  */
-
 function filterOnPrice(products, maxPrice) {
   const priceIsgood = maxPrice.filter(price =>{
     if(maxPrice<=500){
@@ -35,7 +34,8 @@ function filterOnPrice(products, maxPrice) {
     };
     return priceIsgood
   });
-}
+
+
 
 // Ne pas modifier l'export
 module.exports = filterOnPrice;
